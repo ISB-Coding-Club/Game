@@ -3,7 +3,7 @@ tasks:
 
 ports:
     - port: 3004
-      onOpen: open-browser
+      onOpen: ignore
 
 vscode:
     extensions:

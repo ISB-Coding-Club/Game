@@ -6,6 +6,7 @@
     "author": "ISB Coding Club <500074@bsd48.org>",
     "license": "MIT",
     "devDependencies": {
+        "@types/dat.gui": "^0.7.7",
         "@types/express": "^4.17.13",
         "@types/express-http-proxy": "^1.6.3",
         "@types/howler": "^2.2.7",
@@ -24,6 +25,7 @@
         "mini-css-extract-plugin": "^2.6.0",
         "nodemon": "^2.0.16",
         "prettier": "^2.6.2",
+        "prettier-plugin-glsl": "^0.0.4",
         "sass": "^1.51.0",
         "sass-loader": "^12.6.0",
         "serve": "^13.0.2",
@@ -42,6 +44,7 @@
         "axios": "^0.27.2",
         "cannon-es": "^0.19.0",
         "crypto-browserify": "^3.12.0",
+        "dat.gui": "^0.7.9",
         "ejs": "^3.1.7",
         "express": "^4.18.1",
         "express-http-proxy": "^1.6.3",
@@ -51,6 +54,7 @@
         "socket.io-client": "^4.5.0",
         "stats.js": "^0.17.0",
         "three": "^0.140.0",
+        "three-noise": "^1.1.2",
         "tslib": "^2.4.0"
     },
     "scripts": {

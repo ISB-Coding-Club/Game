@@ -5,6 +5,41 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@chevrotain/cst-dts-gen@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "@chevrotain/cst-dts-gen@npm:10.1.2"
+  dependencies:
+    "@chevrotain/gast": ^10.1.2
+    "@chevrotain/types": ^10.1.2
+    lodash: 4.17.21
+  checksum: 47bcab11b4b8165115c13bb5ef9561f49a77454698b51932711584e3a3062a26af4609fa6e0c0c1d48619366bdf89bbd614e06b2d7d6757ce8e1679fdcaabd64
+  languageName: node
+  linkType: hard
+
+"@chevrotain/gast@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "@chevrotain/gast@npm:10.1.2"
+  dependencies:
+    "@chevrotain/types": ^10.1.2
+    lodash: 4.17.21
+  checksum: dbb8c80903cf30398b1b0c0ae24dddb0a05a5c95130fdb362f6627030dea0b560c6cdc6bcbbf91f4d85914636cec24dc2bd6403b83b802dfba2d6fabf4dc0487
+  languageName: node
+  linkType: hard
+
+"@chevrotain/types@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "@chevrotain/types@npm:10.1.2"
+  checksum: cc3779e49370b5ce86a8b849c7ae7026ac934f255e027275fbfca33ee319b84c730cad95db038dd020cb31bd1e777866a45517a4d69de6afec9bbf9a6315844c
+  languageName: node
+  linkType: hard
+
+"@chevrotain/utils@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "@chevrotain/utils@npm:10.1.2"
+  checksum: 05301feae7cb029418890d12961336d7db340a075c17e3815d107f30d968b9fcca23162addb99772cca41fae242f53dea6146fbd295c928ad26092c27ac71050
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-consumer@npm:0.8.0":
   version: 0.8.0
   resolution: "@cspotcode/source-map-consumer@npm:0.8.0"
@@ -74,6 +109,17 @@ __metadata:
   version: 2.0.3
   resolution: "@leichtgewicht/ip-codec@npm:2.0.3"
   checksum: 5b6bee0481c82ac05c748322e34ac68aa01757451b4f49f1ab9cc91e420a1ea4cd0fc4678251e6fa41d566a3e3683cca3e179fb767c87845286863ac98b54f15
+  languageName: node
+  linkType: hard
+
+"@netflix/nerror@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "@netflix/nerror@npm:1.1.3"
+  dependencies:
+    assert-plus: ^1.0.0
+    extsprintf: ^1.4.0
+    lodash: ^4.17.15
+  checksum: 5b11856cb66614744c91a3202f450c468d573aa036ca421e0aacf922cb15ac3c3e34062f3f2155e10a99942ac1ffa02e5df7fc88561855aeb3fc1d0abbaec46c
   languageName: node
   linkType: hard
 
@@ -238,6 +284,13 @@ __metadata:
   version: 2.8.12
   resolution: "@types/cors@npm:2.8.12"
   checksum: 8c45f112c7d1d2d831b4b266f2e6ed33a1887a35dcbfe2a18b28370751fababb7cd045e745ef84a523c33a25932678097bf79afaa367c6cb3fa0daa7a6438257
+  languageName: node
+  linkType: hard
+
+"@types/dat.gui@npm:^0.7.7":
+  version: 0.7.7
+  resolution: "@types/dat.gui@npm:0.7.7"
+  checksum: 0a20c10013c5d8595593b9d258f48c070a09601382e9cb0a4d03b98821a8373430747b31935f73434bf0c59122c43276c6763ca1e493eaeb05a9d74bf37a7b81
   languageName: node
   linkType: hard
 
@@ -1058,6 +1111,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"assert-plus@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "assert-plus@npm:1.0.0"
+  checksum: 19b4340cb8f0e6a981c07225eacac0e9d52c2644c080198765d63398f0075f83bbc0c8e95474d54224e297555ad0d631c1dcd058adb1ddc2437b41a6b424ac64
+  languageName: node
+  linkType: hard
+
 "async@npm:^2.4.1":
   version: 2.6.4
   resolution: "async@npm:2.6.4"
@@ -1447,6 +1507,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chevrotain@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "chevrotain@npm:10.1.2"
+  dependencies:
+    "@chevrotain/cst-dts-gen": ^10.1.2
+    "@chevrotain/gast": ^10.1.2
+    "@chevrotain/types": ^10.1.2
+    "@chevrotain/utils": ^10.1.2
+    lodash: 4.17.21
+    regexp-to-ast: 0.5.0
+  checksum: aa9e4cd79c8fb372de652ab37af2f6d77b83a93acd271118eafea87015a5176acf447f6e873cca407582bf47cb337cd8daa2a18780ee0e396afa8af0be03d292
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.5.2, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
@@ -1614,6 +1688,13 @@ __metadata:
   version: 2.0.16
   resolution: "colorette@npm:2.0.16"
   checksum: cd55596a3a2d1071c1a28eee7fd8a5387593ff1bd10a3e8d0a6221499311fe34a9f2b9272d77c391e0e003dcdc8934fb2f8d106e7ef1f7516f8060c901d41a27
+  languageName: node
+  linkType: hard
+
+"colors@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "colors@npm:1.4.0"
+  checksum: 98aa2c2418ad87dedf25d781be69dc5fc5908e279d9d30c34d8b702e586a0474605b3a189511482b9d5ed0d20c867515d22749537f7bc546256c6014f3ebdcec
   languageName: node
   linkType: hard
 
@@ -1945,6 +2026,13 @@ __metadata:
   bin:
     cssesc: bin/cssesc
   checksum: f8c4ababffbc5e2ddf2fa9957dda1ee4af6048e22aeda1869d0d00843223c1b13ad3f5d88b51caa46c994225eacb636b764eb807a8883e2fb6f99b4f4e8c48b2
+  languageName: node
+  linkType: hard
+
+"dat.gui@npm:^0.7.9":
+  version: 0.7.9
+  resolution: "dat.gui@npm:0.7.9"
+  checksum: b5b70160657224eacdb8e0a8d76376e6e59adcc654db577531c7bebce854c4f774d1511df6f064e8246a88cf9a3abe489e4d647cf9e53d26a26141a1b5d31e68
   languageName: node
   linkType: hard
 
@@ -2679,6 +2767,13 @@ __metadata:
   peerDependencies:
     webpack: ^3.1.0
   checksum: b3a39b58d8827ea09507c2cf3aec4c154bd0ce54d708f9ec4d0d26d3fa0238cc1c62d023bba48ed5df179cebe029fb8ef50dbbb44cc818023f8db3781b65fce7
+  languageName: node
+  linkType: hard
+
+"extsprintf@npm:^1.4.0":
+  version: 1.4.1
+  resolution: "extsprintf@npm:1.4.1"
+  checksum: a2f29b241914a8d2bad64363de684821b6b1609d06ae68d5b539e4de6b28659715b5bea94a7265201603713b7027d35399d10b0548f09071c5513e65e8323d33
   languageName: node
   linkType: hard
 
@@ -3897,7 +3992,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.14, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
+"lodash@npm:4.17.21, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -4290,6 +4385,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "multiplayer-game@workspace:."
   dependencies:
+    "@types/dat.gui": ^0.7.7
     "@types/express": ^4.17.13
     "@types/express-http-proxy": ^1.6.3
     "@types/howler": ^2.2.7
@@ -4305,6 +4401,7 @@ __metadata:
     concurrently: ^7.1.0
     crypto-browserify: ^3.12.0
     css-loader: ^6.7.1
+    dat.gui: ^0.7.9
     ejs: ^3.1.7
     eslint: ^8.14.0
     express: ^4.18.1
@@ -4316,6 +4413,7 @@ __metadata:
     nodemon: ^2.0.16
     postprocessing: ^6.26.4
     prettier: ^2.6.2
+    prettier-plugin-glsl: ^0.0.4
     sass: ^1.51.0
     sass-loader: ^12.6.0
     serve: ^13.0.2
@@ -4325,6 +4423,7 @@ __metadata:
     stats.js: ^0.17.0
     style-loader: ^3.3.1
     three: ^0.140.0
+    three-noise: ^1.1.2
     ts-loader: ^9.3.0
     ts-node: ^10.7.0
     ts-shader-loader: ^1.0.6
@@ -4906,6 +5005,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-glsl@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "prettier-plugin-glsl@npm:0.0.4"
+  dependencies:
+    "@netflix/nerror": ^1.1.3
+    chevrotain: ^10.1.2
+    colors: ^1.4.0
+    lodash: ^4.17.21
+  peerDependencies:
+    prettier: ^2.0.0
+  checksum: 27229637cf63ce15edb2714cfb5f0a9b564763658397ec77eee0f2f719a14d3b6eb593b4bf0f0a63106dc9f3628ca3399321ea7f6064fb4108c5189eab804ae4
+  languageName: node
+  linkType: hard
+
 "prettier@npm:^2.6.2":
   version: 2.6.2
   resolution: "prettier@npm:2.6.2"
@@ -5129,6 +5242,13 @@ __metadata:
   dependencies:
     resolve: ^1.9.0
   checksum: 2a04aab4e28c05fcd6ee6768446bc8b859d8f108e71fc7f5bcbc5ef25e53330ce2c11d10f82a24591a2df4c49c4f61feabe1fd11f844c66feedd4cd7bb61146a
+  languageName: node
+  linkType: hard
+
+"regexp-to-ast@npm:0.5.0":
+  version: 0.5.0
+  resolution: "regexp-to-ast@npm:0.5.0"
+  checksum: 72e32f2a1217bb22398ac30867ddd43e16943b6b569dd4eb472de47494c7a39e34f47ee3e92ad4cbf92308f98997da366fe094a0e58eb6b93eab0ee956fff86d
   languageName: node
   linkType: hard
 
@@ -6047,6 +6167,22 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
+  languageName: node
+  linkType: hard
+
+"three-noise@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "three-noise@npm:1.1.2"
+  dependencies:
+    three: ^0.128.0
+  checksum: eb48961f62569a5a3a0b92abc25058162ddd6acdb991a51da103920e8c5a54bb9079a06f2bf3b0bcc0c6b0eb5a6e9948f5c8e7f37569499b9509420afbfd0d96
+  languageName: node
+  linkType: hard
+
+"three@npm:^0.128.0":
+  version: 0.128.0
+  resolution: "three@npm:0.128.0"
+  checksum: 94d2b0e0ab1093acbc97e7de2ba38073f0479d2285f5ec333d1f900f1bf8c6a435f5815f24678f38a9898fc1ca39595a0c865cf83b3ce9c4164bba3393108dd3
   languageName: node
   linkType: hard
 

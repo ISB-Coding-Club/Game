@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import * as CANNON from "cannon-es";
+import * as dat from "dat.gui";
 import Stats from "stats.js";
 import { GameWindowObject } from "./globals/types";
 import { checkWebGL } from "./util/webgl";
@@ -59,6 +60,11 @@ export const init = (socket: Socket) => {
     mb.dom.style.cssText = "position: fixed; top: 5px; left: 168px;";
     mb.showPanel(2);
 
+    // Dat GUI
+    const gui = new dat.GUI({
+        name: "Options"
+    });
+
     // Create the renderer
     const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -97,6 +103,13 @@ export const init = (socket: Socket) => {
     player.updateMassProperties();
     world.addBody(player);
     scene.add(playerObject);
+
+    // Add it to the GUI
+    const playerF = gui.addFolder("player");
+    const playerPos = playerF.addFolder("position");
+    playerPos.add(playerObject.position, "x").listen();
+    playerPos.add(playerObject.position, "y").listen();
+    playerPos.add(playerObject.position, "z").listen();
 
     emitPlayer(player, socket);
 
