@@ -5,3 +5,7 @@ tasks:
 ports:
   - port: 3004
     onOpen: open-browser
+
+vscode:
+  extensions:
+    - genuitecllc.codetogether
