@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import * as CANNON from "cannon-es";
-import { GameWindowObject } from "src/globals/types";
+import { GameWindowObject } from "../globals/types";
 import { Socket } from "socket.io-client";
 
 const gameWindow: GameWindowObject = window;
@@ -29,7 +29,12 @@ export class PointerLockControls extends THREE.EventDispatcher {
     private isThirdPerson: boolean;
     private socket: Socket;
 
-    constructor(camera: THREE.PerspectiveCamera, body: CANNON.Body, player: THREE.Object3D, socket: Socket) {
+    constructor(
+        camera: THREE.PerspectiveCamera,
+        body: CANNON.Body,
+        player: THREE.Object3D,
+        socket: Socket
+    ) {
         super();
 
         this.enabled = false;
@@ -178,26 +183,26 @@ export class PointerLockControls extends THREE.EventDispatcher {
         switch (event.keyCode) {
             case 38:
             case 87:
-                if(!this.isThirdPerson) this.moveForward = true;
-                if(this.isThirdPerson) this.moveBackward = true;
+                if (!this.isThirdPerson) this.moveForward = true;
+                if (this.isThirdPerson) this.moveBackward = true;
                 break;
 
             case 37:
             case 65:
-                if(!this.isThirdPerson) this.moveLeft = true;
-                if(this.isThirdPerson) this.moveRight = true;
+                if (!this.isThirdPerson) this.moveLeft = true;
+                if (this.isThirdPerson) this.moveRight = true;
                 break;
 
             case 40:
             case 83:
-                if(!this.isThirdPerson) this.moveBackward = true;
-                if(this.isThirdPerson) this.moveForward = true;
+                if (!this.isThirdPerson) this.moveBackward = true;
+                if (this.isThirdPerson) this.moveForward = true;
                 break;
 
             case 39:
             case 68:
-                if(!this.isThirdPerson) this.moveRight = true;
-                if(this.isThirdPerson) this.moveLeft = true;
+                if (!this.isThirdPerson) this.moveRight = true;
+                if (this.isThirdPerson) this.moveLeft = true;
                 break;
 
             case 80:
@@ -217,32 +222,32 @@ export class PointerLockControls extends THREE.EventDispatcher {
         switch (event.keyCode) {
             case 38:
             case 87:
-                if(!this.isThirdPerson) this.moveForward = false;
-                if(this.isThirdPerson) this.moveBackward = false;
+                if (!this.isThirdPerson) this.moveForward = false;
+                if (this.isThirdPerson) this.moveBackward = false;
                 break;
 
             case 37:
             case 65:
-                if(!this.isThirdPerson) this.moveLeft = false;
-                if(this.isThirdPerson) this.moveRight = false;
+                if (!this.isThirdPerson) this.moveLeft = false;
+                if (this.isThirdPerson) this.moveRight = false;
                 break;
 
             case 40:
             case 83:
-                if(!this.isThirdPerson) this.moveBackward = false;
-                if(this.isThirdPerson) this.moveForward = false;
+                if (!this.isThirdPerson) this.moveBackward = false;
+                if (this.isThirdPerson) this.moveForward = false;
                 break;
 
             case 39:
             case 68:
-                if(!this.isThirdPerson) this.moveRight = false;
-                if(this.isThirdPerson) this.moveLeft = false;
+                if (!this.isThirdPerson) this.moveRight = false;
+                if (this.isThirdPerson) this.moveLeft = false;
                 break;
         }
     };
 
     private toggleThirdPerson() {
-        if(this.isThirdPerson) {
+        if (this.isThirdPerson) {
             this.isThirdPerson = false;
             this.camera.position.set(0, 0, 0);
             this.camera.rotation.set(0, 0, 0);
@@ -266,7 +271,7 @@ export class PointerLockControls extends THREE.EventDispatcher {
     public update(delta: number) {
         if (!this.enabled) return;
 
-        if(gameWindow.food && gameWindow.food <= 3) {
+        if (gameWindow.food && gameWindow.food <= 3) {
             this.velocityFactor = 0.05;
         } else {
             this.velocityFactor = 0.2;

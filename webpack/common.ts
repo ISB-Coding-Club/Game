@@ -4,7 +4,7 @@ import HtmlPlugin from "html-webpack-plugin";
 import MiniCSSExtractPlugin from "mini-css-extract-plugin";
 
 const config: webpack.Configuration = {
-    entry: "./src/index.ts",
+    entry: "./client/index.ts",
     devtool: "inline-source-map",
     mode: "development",
     output: {
@@ -19,12 +19,12 @@ const config: webpack.Configuration = {
             {
                 test: /\.tsx?$/i,
                 use: "ts-loader",
-                exclude: /node_modules/i,
+                exclude: [/node_modules/i, /\.yarn/i, /dist/i, /server/i],
             },
             {
                 test: /\.s(?:a|c)ss$/i,
                 use: [MiniCSSExtractPlugin.loader, "css-loader", "sass-loader"],
-                exclude: /node_modules/i,
+                exclude: [/node_modules/i, /\.yarn/i, /dist/i, /server/i],
             },
             {
                 test: /\.css$/,

@@ -1,4 +1,4 @@
-import { GameWindowObject } from "src/globals/types";
+import { GameWindowObject } from "../globals/types";
 import * as THREE from "three";
 
 const gameWindow: GameWindowObject = window;

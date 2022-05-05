@@ -64,7 +64,11 @@ io.on("connection", (s) => {
             "remove",
             Object.assign(store.players[playerId], { sender: s.id })
         );
-        console.log(`[INFO] [${new Date().toUTCString()}] [${s.id}] Removed player: ${playerId}`);
+        console.log(
+            `[INFO] [${new Date().toUTCString()}] [${
+                s.id
+            }] Removed player: ${playerId}`
+        );
         delete store.players[playerId];
     });
     s.on("update", (element: CubeInfo | PlayerInfo) => {
@@ -110,7 +114,13 @@ io.on("connection", (s) => {
     });
 });
 
-app.use(proxy(`http://localhost:${frontend}`));
+app.use(
+    proxy(`http://localhost:${frontend}`, {
+        proxyErrorHandler: (err, res) => {
+            res.status(503).type("text/plain").send("Service Unavailable");
+        },
+    })
+);
 
 server.listen(port, () => {
     console.log(`Server listening on port ${port}`);

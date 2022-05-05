@@ -1,10 +1,10 @@
 tasks:
-  - command: cd client && yarn install && cd ../server && yarn install
+    - command: cd client && yarn install && cd ../server && yarn install
 
 ports:
-  - port: 3004
-    onOpen: open-browser
+    - port: 3004
+      onOpen: open-browser
 
 vscode:
-  extensions:
-    - genuitecllc.codetogether
+    extensions:
+        - genuitecllc.codetogether

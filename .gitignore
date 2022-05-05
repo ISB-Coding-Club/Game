@@ -105,3 +105,6 @@ dist
 
 # Extensions
 extensions/*.vsix
+
+# Yarn
+.yarn/cache
