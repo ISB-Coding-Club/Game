@@ -1,5 +1,5 @@
 tasks:
-    - command: cd client && yarn install && cd ../server && yarn install
+    - command: yarn install
 
 ports:
     - port: 3004
