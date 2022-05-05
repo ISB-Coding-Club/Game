@@ -1,7 +1,6 @@
 
 tasks:
-  - init: npm install --global duckly
-    command: yarn install
+  - command: cd client && yarn install && cd ../server && yarn install
 
 ports:
   - port: 3004
