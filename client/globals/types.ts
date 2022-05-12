@@ -43,4 +43,6 @@ export interface GameWindowObject extends Window {
     players?: { [key: string]: CANNON.Body };
     playerObject?: THREE.Object3D;
     player?: CANNON.Body;
+    selectedSlot?: number;
+    isInventoryOpen?: boolean;
 }

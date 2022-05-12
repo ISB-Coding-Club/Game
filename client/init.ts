@@ -62,7 +62,7 @@ export const init = (socket: Socket) => {
 
     // Dat GUI
     const gui = new dat.GUI({
-        name: "Options"
+        name: "Options",
     });
 
     // Create the renderer

@@ -1,3 +1,4 @@
+import { onScroll } from "../inventory/hotbar";
 import * as THREE from "three";
 import { GameWindowObject } from "../globals/types";
 import ui from "../ui";
@@ -46,6 +47,10 @@ gameWindow.init = () => {
     gameWindow.lights.spot = spotlight;
 
     gameWindow.genericMaterial = genericMaterial;
+
+    gameWindow.selectedSlot = -2;
+
+    window.addEventListener("wheel", onScroll);
 
     ui();
 };

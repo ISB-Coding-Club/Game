@@ -58,7 +58,7 @@
     },
     "scripts": {
         "build": "webpack --config webpack/build.ts && tsc",
-        "dev": "concurrently \"webpack server --config webpack/server.ts\" \"nodemon server/index.ts\"",
+        "dev": "concurrently \"webpack server --config webpack/server.ts\" \"nodemon --watch server server/index.ts\"",
         "watch": "webpack watch --config webpack/watch.ts",
         "start": "concurrently \"webpack --config webpack/build.ts && serve -p 3008 -s dist\" \"ts-node server/index.ts\"",
         "format": "prettier --write .",

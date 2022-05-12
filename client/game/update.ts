@@ -1,10 +1,10 @@
 import { copyPosition, copyQuaternion } from "../util/copy";
 import { GameWindowObject } from "../globals/types";
 import { Socket } from "socket.io-client";
-import { multiplyText } from "../util/text";
 import { toVector3 } from "../util/vector";
 import { emitCube } from "../websocket/cube";
 import { emitPlayer } from "../websocket/player";
+import { hudUpdate } from "../ui/update";
 
 const gameWindow: GameWindowObject = window;
 let lastCallTime = 0;
@@ -93,35 +93,11 @@ gameWindow.update = (socket: Socket) => {
         }
     }
 
-    // Clear the HUD.
-    gameWindow.hudContext.clearRect(
-        0,
-        0,
-        window.innerWidth,
-        window.innerHeight
-    );
-
-    // Update the health on the HUD.
-    gameWindow.hudContext.fillText(
-        multiplyText("❤️", gameWindow.health),
-        window.innerWidth - 20,
-        window.innerHeight - 20
-    );
-
-    // Update the food on the HUD.
-    gameWindow.hudContext.fillText(
-        multiplyText("🦴", 10 - gameWindow.food) +
-            multiplyText("🍖", gameWindow.food),
-        265,
-        window.innerHeight - 20
-    );
-
-    // Tell the game that the HUD has been updated.
-    gameWindow.hudTexture.needsUpdate = true;
-
     // Render the scene.
     gameWindow.renderer.render(gameWindow.scene, gameWindow.camera);
-    gameWindow.renderer.render(gameWindow.sceneHud, gameWindow.cameraHud);
+
+    // HUD Update
+    hudUpdate();
 
     // End the statistics tracking
     gameWindow.stats.fps.end();
