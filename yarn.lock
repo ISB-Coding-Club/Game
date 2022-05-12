@@ -4423,7 +4423,6 @@ __metadata:
     stats.js: ^0.17.0
     style-loader: ^3.3.1
     three: ^0.140.0
-    three-noise: ^1.1.2
     ts-loader: ^9.3.0
     ts-node: ^10.7.0
     ts-shader-loader: ^1.0.6
@@ -6167,22 +6166,6 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
-  languageName: node
-  linkType: hard
-
-"three-noise@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "three-noise@npm:1.1.2"
-  dependencies:
-    three: ^0.128.0
-  checksum: eb48961f62569a5a3a0b92abc25058162ddd6acdb991a51da103920e8c5a54bb9079a06f2bf3b0bcc0c6b0eb5a6e9948f5c8e7f37569499b9509420afbfd0d96
-  languageName: node
-  linkType: hard
-
-"three@npm:^0.128.0":
-  version: 0.128.0
-  resolution: "three@npm:0.128.0"
-  checksum: 94d2b0e0ab1093acbc97e7de2ba38073f0479d2285f5ec333d1f900f1bf8c6a435f5815f24678f38a9898fc1ca39595a0c865cf83b3ce9c4164bba3393108dd3
   languageName: node
   linkType: hard
 

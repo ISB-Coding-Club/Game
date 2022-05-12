@@ -54,7 +54,6 @@
         "socket.io-client": "^4.5.0",
         "stats.js": "^0.17.0",
         "three": "^0.140.0",
-        "three-noise": "^1.1.2",
         "tslib": "^2.4.0"
     },
     "scripts": {

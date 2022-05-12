@@ -31,15 +31,15 @@ A PvE game (that allows PvP).
 ## Checklist
 
 -   [x] THREE.js template with physics from CANNON-ES
--   [ ] Modifiable/destructable terrain
+-   [ ] Modifiable/destructable terrain **(In progress)**
 -   [ ] Health
 -   [ ] Food
 -   [ ] Inventory
--   [ ] Procedurally generated terrain (Perlin noise)
+-   [ ] Procedurally generated terrain (Perlin noise) **(In progres)**
 -   [ ] Terrain biomes
--   [ ] Developer Art.
+-   [ ] Developer Art. **(In progress)**
 -   [ ] Certain amounts/types of weapons
--   [ ] Cosmic weapons
+-   [ ] (Overpowered) cosmic weapons **(In progress)**
 -   [ ] Crafting system
 -   [ ] Money
 -   [ ] Economy
@@ -52,6 +52,7 @@ A PvE game (that allows PvP).
 -   [ ] REAL art
 -   [ ] Music & Sound Effects
 -   [ ] Optimize
+-   [ ] Guns **(In progress)**
 
 ## Planned (non-essential) features
 
